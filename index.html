@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let ladder = {
+    number: 0,
+    Up: function () {
+        +this.number++;
+        return this;
+    },
+    Down: function () {
+        +this.number--;
+        return this;
+    },
+    Alert: function () {
+        alert(this.number);
+        return this;
+    }
+}
+
+    ladder.Up().Up().Down().Alert();
+</script>
+</body>
+</html>
