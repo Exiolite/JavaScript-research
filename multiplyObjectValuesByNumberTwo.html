@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let multiplyNumeric = (target) => {
+        for (let key in target) {
+            if (typeof(target[key]) == "number")
+            {
+                target[key] *= 2;
+                alert(target[key]);
+            }
+        }
+    }
+
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    multiplyNumeric(menu);
+</script>
+</body>
+</html>
